@@ -9,6 +9,7 @@ and Dr. Gabriele Ghiotto.
 The project authors are Nicola Gambardella (scriptwriter), Yeganeh Alkhasi (data analysis and debugging) , Silvia Frigo (data analysis and debugging) 
 and Konstantina Cheshmedzhieva (GitHub page, manual and report writer).
 
+
 ## What is the purpose of NOVICE?
 
 This script is targetted at analysing the coverage profile of genes predicted in a metagenome-assembled genome (MAG) and defining the coverage variance 

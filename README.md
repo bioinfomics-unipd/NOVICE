@@ -24,7 +24,7 @@ The input file must be a csv, tsv or ffn file containing the values of the gene 
 The command line usage of this script is very straightforward and allows the user to choose among several options regarding their exact needs. The command
 line would look like this:
 
-`python NOVICE_Build_0_6.py input.csv all mean euclidean`
+`python NOVICE_Build_0_6.py input.csv all mean euclidean prefix`
 
 Let us break down the command line and explore its options:
 
@@ -48,6 +48,12 @@ go-to distance which represent the space between two dots. The Bray-Curtis dista
 and 1. The correlation distance is a more abstract option as the script will calculate the distance as between two random variables with finite variances.
 
 Depending on your targeted results, you can throw `euclidean`, `braycurtis` or `correlation` as the final argument in your command line.
+
+####  2.4. Prefix
+
+As you may be handling a lot of datasets and would like to receive separate output files with different labels, this argument is your way to put in the 
+label you need. For example, you are tackling sample labelled as SAMPLE123. To save the ranking and PCA labelled as SAMPLE123 you just need to insert `SAMPLE123` as the argument called `prefix in the example command line above. This allows you to process multiple datasets one after another and not over-write the created PCAplots but save them separately.
+
 
 #### Now you are ready to go and explore the results!
 

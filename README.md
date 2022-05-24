@@ -52,7 +52,7 @@ Depending on your targeted results, you can throw `euclidean`, `braycurtis` or `
 ####  2.4. Prefix
 
 As you may be handling a lot of datasets and would like to receive separate output files with different labels, this argument is your way to put in the 
-label you need. For example, you are tackling sample labelled as SAMPLE123. To save the ranking and PCA labelled as SAMPLE123 you just need to insert `SAMPLE123` as the argument called `prefix in the example command line above. This allows you to process multiple datasets one after another and not over-write the created PCAplots but save them separately.
+label you need. For example, you are tackling sample labelled as SAMPLE123. To save the ranking and PCA labelled as SAMPLE123 you just need to insert `SAMPLE123` as the argument called `prefix` in the example command line above. This allows you to process multiple datasets one after another and not over-write the created PCAplots but save them separately.
 
 
 #### Now you are ready to go and explore the results!

@@ -24,7 +24,7 @@ The input file must be a csv, tsv or ffn file containing the values of the gene 
 The command line usage of this script is very straightforward and allows the user to choose among several options regarding their exact needs. The command
 line would look like this:
 
-`python NOVICE_Build_0_6.py input.csv all mean euclidean prefix`
+`python NOVICE_Build_0_6.py input.csv all mean euclidean prefix no`
 
 Let us break down the command line and explore its options:
 
@@ -53,6 +53,18 @@ Depending on your targeted results, you can throw `euclidean`, `braycurtis` or `
 
 As you may be handling a lot of datasets and would like to receive separate output files with different labels, this argument is your way to put in the 
 label you need. For example, you are tackling sample labelled as SAMPLE123. To save the ranking and PCA labelled as SAMPLE123 you just need to insert `SAMPLE123` as the argument called `prefix` in the example command line above. This allows you to process multiple datasets one after another and not over-write the created PCAplots but save them separately.
+
+#### 2.5. Keep The Outliers or Not
+
+Let us have a look at the final argument of the command line. It is marked as `no` in the given example. But what does it mean? This argument provides
+you with the option to choose whether or not to keep the outliers. Depending on whether you need them or not, you can simply throw `yes` or `no` 
+in the command line. 
+ 
+ 
+ 
+A side note: the script is set to generate firstly a barplot based on which you need to set a treshold for your data. If you want to keep everything, set it as high as possible given the barplot. If you want to limit your results, just enter the number you would like when the script asks you:
+
+`Please provide a threshold based on the barplot:`
 
 
 #### Now you are ready to go and explore the results!

@@ -28,11 +28,11 @@ line would look like this:
 
 Let us break down the command line and explore its options:
 
-#### 2.1. Rank, PCA or All
+#### 2.1. Rank, PCA, GC or All
 
 As visible from the sample command line provided above, the user has the options to choose their second argument depending on their needs. If you would 
 like to process your data and know only the ranking of the genes, you need to simply put `rank` after the input file. If you would like to extract the 
-data only in the form of a PCA, the argument would become `PCA`. Use `all` if you would like to receive information on both the rank and a visualization 
+data only in the form of a PCA, the argument would become `PCA`. As a non-core function of the program, the user can also calculate the percentage of GC content by using the comman `GC`. Use `all` if you would like to receive information on both the rank and a visualization 
 thorugh PCA.
 
 #### 2.2. Mean or Median
@@ -59,7 +59,10 @@ label you need. For example, you are tackling sample labelled as SAMPLE123. To s
 Let us have a look at the final argument of the command line. It is marked as `no` in the given example. But what does it mean? This argument provides
 you with the option to choose whether or not to keep the outliers. Depending on whether you need them or not, you can simply throw `yes` or `no` 
 in the command line. 
- 
+
+#### 2.6. Name of a .ffn File
+
+In case you would like to take advantage of the non-core functions of the program, you could add to the example command line above the name of a .ffn file containing the sequences. The addition of `filename.ffn` will trigger the system to estimate the GC percentage content of your sequence. 
  
  
 A side note: the script is set to generate firstly a barplot based on which you need to set a treshold for your data. If you want to keep everything, set it as high as possible given the barplot. If you want to limit your results, just enter the number you would like when the script asks you:

@@ -24,7 +24,7 @@ The input file must be a csv, tsv or ffn file containing the values of the gene 
 The command line usage of this script is very straightforward and allows the user to choose among several options regarding their exact needs. The command
 line would look like this:
 
-`python NOVICE_Build_0_6.py input.csv all mean euclidean prefix no`
+`python NOVICE_Build_0_6.py input.csv all mean euclidean prefix no filename.ffn kmersize filename.tsv`
 
 Let us break down the command line and explore its options:
 
@@ -63,9 +63,18 @@ in the command line.
 #### 2.6. Name of a .ffn File
 
 In case you would like to take advantage of the non-core functions of the program, you could add to the example command line above the name of a .ffn file containing the sequences. The addition of `filename.ffn` will trigger the system to estimate the GC percentage content of your sequence. 
+
+#### 2.7. Kmer Size
+
+Here you are enabled to insert the desired kmer size for further analysis.
+
+#### 2.8. Filename.tsv
+
+ Provide the file containing biological functions of genes to analyse.
  
  
-A side note: the script is set to generate firstly a barplot based on which you need to set a treshold for your data. If you want to keep everything, set it as high as possible given the barplot. If you want to limit your results, just enter the number you would like when the script asks you:
+ 
+A side note: the script is set to generate firstly a barplot based on which you need to set a threshold for your data. If you want to keep everything, set it as high as possible given the barplot. If you want to limit your results, just enter the number you would like when the script asks you:
 
 `Please provide a threshold based on the barplot:`
 
